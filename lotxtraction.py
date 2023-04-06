@@ -64,9 +64,8 @@ class Extraction:
                 TESTEUR, username="usrnam", password="passwd", cnopts=cnopts
             )
 
-            # TODO: Centralize kdf extraction to ktedev2021
-            
-
+            # TODO - Done: Centralize kdf extraction on magic server
+           
             try:
                 magic_server = pysftp.Connection(
                     "magicserver", username="usrnam", password="passwd", cnopts=cnopts
