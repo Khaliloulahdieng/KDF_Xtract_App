@@ -6,6 +6,13 @@ import os
 from pathlib import Path
 import easygui
 
+# Please leave a comment to improve the code, I would appreciate it a lot :)
+
+# Remark: I endup repeting client.exec_command & sftp.get for each platform because,
+# when putted in a function paramiko couldn't handle request when it's called, got some really weird errors :(
+# Not a nice look... but Seems like a regression... am open if you have a workaround  
+
+# Servers names are random
 
 class Extraction:
     # @st.cache(allow_output_mutation=True, suppress_st_warning=True)
